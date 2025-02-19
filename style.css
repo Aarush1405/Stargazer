@@ -353,7 +353,7 @@ header nav {
   background-color: transparent;
   position: absolute;
   top: -60px;
-  left: 15%;
+  left: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -374,10 +374,10 @@ header nav {
 }
 @keyframes rotatemoon {
   0% {
-    transform: rotate(0deg) translate(650%);
+    transform: rotate(0deg) translate(600px);
   }
   100% {
-    transform: rotate(360deg) translate(650%);
+    transform: rotate(360deg) translate(600px);
   }
 }
 #exp {
