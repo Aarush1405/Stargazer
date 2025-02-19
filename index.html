@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/71a06f9aff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="./images/logo.png" alt="" style="height: 50px; margin-left: 10px;">
+                <h1>Stargazer</h1>
+            </div>
+            <div class="center">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#explore">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#spaceSnap">Space-Snap</a>
+                    </li>
+                    <li>
+                        <a href="#exp">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#login">
+                            <button id="signUpBtn">Sign Up</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right" onclick='hamburger()'>
+                <i class="fa-solid fa-bars" style="color: aqua;"></i>
+            </div>
+        </nav>
+        <div class="menu-contents" id="menu-contents">
+            <ul>
+                <li tabindex="1">
+                    <a href="#home">Home</a>
+                </li>
+                <li tabindex="2">
+                    <a href="#explore">Explore</a>
+                </li>
+                <li tabindex="3">
+                    <a href="#spaceSnap">Space-Snap</a>
+                </li>
+                <li tabindex="4">
+                    <a href="#exp">Experience</a>
+                </li>
+                <li tabindex="5">
+                    <a href="#login" id="signUpBtn">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="popUp" id="popUp">
+        <button onclick="close1()" id="cross">X</button>
+        <div class="loginForm" id="signUp">
+
+            <form onsubmit="submitForm(event)">
+                <h1 style="text-align: center; font-size: 35px;">SignUp </h1>
+                <table border="0" cellpadding="20px" cellspacing="0" id="table">
+                    <tbody id="tbody">
+                        <tr id="tr">
+                            <td id="td"><label for="name">Enter your Name </label></td>
+                            <td id="td"><input type="text" id="name" required></td>
+                        </tr>
+                        <tr id="tr">
+                            <td id="td"><label for="email">Enter your Email</label></td>
+                            <td id="td"><input type="email" name="" id="email" required></td>
+                        </tr>
+                        <tr id="tr">
+                            <td id="td"><label for="pass">Enter your Password</label></td>
+                            <td id="td"><input type="password" id="pass" required></td>
+                        </tr>
+                        <tr id="tr">
+                            <td id="td"><label for="cpass">Confirm your Password</label></td>
+                            <td id="td"><input type="password" id="cpass" required></td>
+                        </tr>
+                        <tr text-align="center" id="tr">
+                            <td colspan="2" id="td">
+                                <button type="submit" id="submit">Submit</button>
+                            </td id="td">
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="expand" id="expand"></div>
+    </div>
+
+    <section id="home">
+        <div class="heading">
+            <h1 style="color: aqua;">Stellar Horizons:</h1>
+            <h3>Exploring the Universe</h3>
+            <br>
+            <a href="#login"><button id="join-us">Join Us</button></a>
+        </div>
+        <div class="earthbg">
+            <div class="earth">
+
+            </div>
+        </div>
+        <div class="card1" id="explore">
+            <div class="card2" id="card2"></div>
+        </div>
+        <div class="hero"></div>
+        <div class="moonbg">
+            <div class="moon"></div>
+        </div>
+        <img src="./images/astronaut.png" alt="" height="100px" width="100px" id="img">
+    </section>
+    <section id="spaceSnap">
+        <h1 align="center" style="border-bottom: 5px solid white; font-size: 40px">
+            Space Snap
+        </h1>
+        <div id="snap">
+            <br>
+            <h1 align="center">Asteroid Bennu Holds the Building Blocks of Life</h1>
+            <h4 align="center">2025-02-12</h4>
+            <br>
+            <img src="">
+            <br>
+            <div id="bckimg"></div>
+        </div>
+    </section>
+    <section id="exp">
+        <h1 align="center">
+            Our Experience
+        </h1>
+        <hr width="15%" size="5" color="white" style="margin-left: 42.5%;">
+        <img src="./images/Spaceship.png" alt="">
+        <div id="lorem">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quos doloremque laboriosam quidem hic,
+            assumenda soluta animi perspiciatis. Facere praesentium officia aliquid sunt, ratione modi corrupti qui
+            placeat voluptates minus doloremque velit ullam aspernatur sit. Molestias autem consequuntur, cumque
+            mollitia aliquam natus omnis quam consequatur quo dolore ratione odit nostrum assumenda animi optio eligendi
+            voluptate illum facere sequi corporis sapiente corrupti, amet reprehenderit! Autem id deserunt ex hic culpa
+            nam, error nesciunt reprehenderit tempore, nisi non consequuntur voluptatum. Voluptate nulla asperiores
+            exercitationem! Molestiae nobis repellendus, eos aspernatur ipsam, impedit consectetur suscipit numquam
+            alias repudiandae temporibus id asperiores nesciunt atque eligendi aliquid, earum perferendis. Laboriosam
+            animi sint enim repudiandae dicta numquam dolor libero architecto earum, impedit inventore necessitatibus,
+            deleniti maxime omnis hic nostrum vel quibusdam nobis maiores beatae labore repellendus dolorum. Totam
+            architecto facilis, nemo quam omnis fuga voluptatum quae excepturi hic asperiores quas voluptatem amet dicta
+            alias quod? Iure sunt deleniti commodi laboriosam aspernatur adipisci. Non itaque esse possimus at ab!
+            Incidunt sequi error fugit molestiae tempora ab voluptatem consequuntur nihil assumenda, labore consectetur
+            deleniti libero perspiciatis necessitatibus quos blanditiis maxime unde quibusdam nisi temporibus alias.
+            Fugiat excepturi eius, laborum et reprehenderit soluta ullam fuga doloribus omnis quidem. Assumenda,
+            repudiandae?
+        </div>
+    </section>
+    <section id="login">
+        <div class="loginForm">
+            <h1 style="text-align: center; font-size: 35px;">SignUp </h1>
+            <form onsubmit="submitForm1(event)">
+                <table border="0" cellpadding="20px" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td><label for="name">Enter your Name </label></td>
+                            <td><input type="text" id="name1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Enter your Email</label></td>
+                            <td><input type="email" name="" id="email1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pass">Enter your Password</label></td>
+                            <td><input type="password" id="pass1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="cpass">Confirm your Password</label></td>
+                            <td><input type="password" required id="cpass1" required></td>
+                        </tr>
+                        <tr text-align="center">
+                            <td colspan="2">
+                                <button type="submit">Submit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <img src="./images/astronaut.png" alt="" height="30px" width="30px">Aarush&copy;2025
+    </footer>
+    <script src=" ./script.js"></script>
+</body>
+
+</html>
