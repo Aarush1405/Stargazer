@@ -475,7 +475,7 @@ header nav {
   td {
     display: table-row;
   }
-  .loginForm table tbody lable,
+  .loginForm #table #tbody lable,
   input {
     margin: 30px;
     width: 100%;
