@@ -471,8 +471,8 @@ header nav {
 }
 
 @media (max-width: 780px) and (min-width: 160px) {
-  .loginForm table tr,
-  td {
+  .loginForm #table #tr,
+  #td {
     display: table-row;
   }
   .loginForm #table #tbody lable,
@@ -727,7 +727,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .expand {
-    width: 90%;
+    width: 70%;
     padding: 20px;
   }
 
@@ -743,7 +743,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .expand {
-    width: 100%;
+    width: 60%;
   }
 
   .expand h1 {
